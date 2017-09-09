@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    tools:context="com.products.InfoProduct">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:background="@drawable/shapebox"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_next"
+                android:paddingLeft="10dp"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:background="@drawable/circlebutton"
+                android:src="@drawable/arrow"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="22dp"
+                />
+
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:paddingLeft="10dp"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:background="@drawable/circlebutton"
+                android:contentDescription="Let's start"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="22dp"
+                android:src="@drawable/arrow"
+                android:rotation="180"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/viewPagerIndicator"
+                android:layout_width="290dp"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="bottom|center">
+
+
+                <LinearLayout
+                    android:id="@+id/viewPagerCountDots"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_info_product"
+        />
+
+</android.support.design.widget.CoordinatorLayout>
