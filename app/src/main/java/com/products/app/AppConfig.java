@@ -5,17 +5,17 @@ package com.products.app;
  */
 public class AppConfig {
 
-    public static String URL_REGISTER = "http://technoaddict.esy.es/android_login_api/register.php";
+    public static String URL_REGISTER = "http://technoaddict.000webhostapp.com/android_login_api/register.php";
 
     //login
-    public static String URL_LOGIN = "http://technoaddict.esy.es/android_login_api/login.php";
+    public static String URL_LOGIN = "http://technoaddict.000webhostapp.com/android_login_api/login.php";
     // Server user likecount url
-    public static String URL_Like = "http://technoaddict.esy.es/android_login_api/likescount.php";
+    public static String URL_Like = "http://technoaddict.000webhostapp.com/android_login_api/likescount.php";
 
     // SERVER URL FOR PRODUCTS
-    public static String URL_PRODUCT = "http://technoaddict.esy.es/android_login_api/getproducts.php";
+    public static String URL_PRODUCT = "http://technoaddict.000webhostapp.com/android_login_api/getproducts.php";
 
     //Parents
-    public static String URL_PARENT = "http://technoaddict.esy.es/android_login_api/";
+    public static String URL_PARENT = "http://technoaddict.000webhostapp.com/android_login_api/";
 
 }
