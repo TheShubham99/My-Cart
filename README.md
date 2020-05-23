@@ -1,4 +1,6 @@
 # My-Cart
+### A front end repo for ecommerce android application.
+
 Download the Project and open by using android Studio.
 
 # App Link:
