@@ -2,7 +2,7 @@
 ----------------
 ### A front end repo for ecommerce android application.
 
-### Dev paltform -
+### Development Platform -
 Download the Project and open by using android Studio.
 
 # App Link:
